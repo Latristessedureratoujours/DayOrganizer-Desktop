@@ -6,44 +6,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var ToDo = (function () {
-    function ToDo() {
-    }
-    return ToDo;
-}());
-var todos = [
-    {
-        title: 'Сдать ТФЯ на ХОРОШО или выше',
-        completed: true
-    },
-    {
-        title: 'Защитить курсовой проект',
-        completed: false
-    },
-    {
-        title: 'Подготовиться к физике',
-        completed: true
-    },
-    {
-        title: 'подготовиться к ТРПО',
-        completed: false
-    }
-];
 var AppComponent = (function () {
     function AppComponent() {
-        this.name = 'DayOrganizer';
         this.title = 'DayOrganizer';
-        this.todos = todos;
     }
-    AppComponent.prototype.toggle = function (todo) {
-        todo.completed = !todo.completed;
-    };
-    AppComponent.prototype.delete = function (todo) {
-        var index = this.todos.indexOf(todo);
-        if (index > -1) {
-            this.todos.splice(index, 1);
-        }
-    };
     return AppComponent;
 }());
 AppComponent = __decorate([
